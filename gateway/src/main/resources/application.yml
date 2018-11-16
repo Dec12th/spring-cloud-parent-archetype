@@ -1,0 +1,18 @@
+server:
+  port: 18090
+  undertow:
+    worker-threads: 200
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:18080/eureka
+
+# 基础信息配置
+spring:
+  application:
+    name: gateway
+  profiles:
+    active: apollo
+
+

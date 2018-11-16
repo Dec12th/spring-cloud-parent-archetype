@@ -1,0 +1,9 @@
+app:
+  id: spring-cloud-zuul
+
+apollo:
+  bootstrap:
+    enabled: true
+    #注明监听的namespace
+    namespaces: application,TEST1.common-config,test-private,yml-test.yml
+  meta: http://localhost:18080
