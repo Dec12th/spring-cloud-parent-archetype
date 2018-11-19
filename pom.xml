@@ -99,6 +99,18 @@
         </repository>
     </repositories>
 
+    <profiles>
+        <profile>
+            <id>apollo</id>
+            <dependencies>
+                <dependency>
+                    <groupId>com.ctrip.framework.apollo</groupId>
+                    <artifactId>apollo-client</artifactId>
+                    <version>1.1.0</version>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
 
 	<build>
         <defaultGoal>compile</defaultGoal>
