@@ -1,0 +1,10 @@
+server:
+  port: 30000
+  undertow:
+    worker-threads: 200
+
+spring:
+  application:
+    name: business-sample
+  profiles:
+    active: eureka

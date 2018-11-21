@@ -6,7 +6,8 @@
     <modules>
         <module>gateway</module>
         <module>register</module>
-    </modules>
+    <module>business</module>
+  </modules>
     <groupId>com.benny.november</groupId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
@@ -41,7 +42,7 @@
                 <version>1.1.12</version>
             </dependency>
 
-            <!-- pageHelper分页 -->
+            <!-- pageHelper��ҳ -->
             <dependency>
                 <groupId>com.github.pagehelper</groupId>
                 <artifactId>pagehelper</artifactId>
@@ -60,7 +61,7 @@
                 <version>4.1.21</version>
             </dependency>
 
-            <!--引入sharding-jdbc,实现分库分表，读写分离，数据主从-->
+            <!--����sharding-jdbc,ʵ�ַֿ�ֱ���д���룬��������-->
             <dependency>
                 <groupId>io.shardingjdbc</groupId>
                 <artifactId>sharding-jdbc-core-spring-boot-starter</artifactId>
@@ -91,20 +92,19 @@
                 <artifactId>apollo-client</artifactId>
                 <version>1.1.0</version>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
 
-     <!--//使用aliyun镜像-->
-    <repositories>
+     <!--//ʹ��aliyun����-->
+<!--    <repositories>
         <repository>
             <id>aliyun</id>
             <name>aliyun</name>
             <url>http://maven.aliyun.com/nexus/content/groups/public</url>
         </repository>
-    </repositories>
+    </repositories>-->
 
-    <profiles>
+<!--    <profiles>
         <profile>
             <id>apollo</id>
             <dependencies>
@@ -115,7 +115,7 @@
                 </dependency>
             </dependencies>
         </profile>
-    </profiles>
+    </profiles>-->
 
 	<build>
         <defaultGoal>compile</defaultGoal>
@@ -155,9 +155,9 @@
                 <executions>
                     <execution>
                         <id>attach-sources</id>
-                        <phase>verify</phase><!--  要绑定到的生命周期的阶段 在verify之后，install之前执行下面指定的goal -->
+                        <phase>verify</phase><!--  Ҫ�󶨵����������ڵĽ׶� ��verify֮��install֮ǰִ������ָ����goal -->
                         <goals>
-                            <goal>jar-no-fork</goal><!-- 类似执行mvn source:jar -->
+                            <goal>jar-no-fork</goal><!-- ����ִ��mvn source:jar -->
                         </goals>
                     </execution>
                 </executions>
