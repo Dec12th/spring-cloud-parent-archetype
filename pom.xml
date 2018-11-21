@@ -86,11 +86,16 @@
                 <version>2.8.5</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.ctrip.framework.apollo</groupId>
+                <artifactId>apollo-client</artifactId>
+                <version>1.1.0</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
 
-    <!-- 使用aliyun镜像 -->
+     <!--//使用aliyun镜像-->
     <repositories>
         <repository>
             <id>aliyun</id>
