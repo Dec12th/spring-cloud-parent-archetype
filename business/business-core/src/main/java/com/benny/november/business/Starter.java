@@ -12,7 +12,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @date 2018/11/20 10:43
  */
 @EnableDiscoveryClient
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.benny.framework.common")
 @EnableCommonNetClient
 @CommonNetApiScan(basePackages = "com.benny.november.business.api.*")
 public class Starter {
