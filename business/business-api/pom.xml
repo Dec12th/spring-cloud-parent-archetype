@@ -16,7 +16,6 @@
         <dependency>
             <groupId>com.benny.framework</groupId>
             <artifactId>common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
