@@ -1,7 +1,7 @@
 package com.benny.november.controller;
 
-import com.benny.archetype.business.api.DemoFacade;
-import com.benny.archetype.business.api.request.UserQueryRequest;
+import com.benny.november.business.api.DemoFacade;
+import com.benny.november.business.api.request.UserQueryRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
