@@ -2,7 +2,9 @@ package com.benny.november.business.api;
 
 import com.benny.framework.common.net.annotations.CommonNet;
 import com.benny.november.business.api.request.UserQueryRequest;
+import com.benny.november.business.api.request.UserSaveRequest;
 import com.benny.november.business.api.result.UserQueryResult;
+import com.benny.november.business.api.result.UserSaveResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,4 +26,12 @@ public interface DemoFacade {
      */
     @RequestMapping(value = "queryUser", method = RequestMethod.POST)
     UserQueryResult queryUser(UserQueryRequest request);
+
+    /**
+     * 保存用户信息
+     * @param request 请求参数
+     * @return UserSaveResult 返回参数
+     */
+    @RequestMapping(value = "saveUser", method = RequestMethod.POST)
+    UserSaveResult saveUser(UserSaveRequest request);
 }

@@ -1,14 +1,13 @@
-package com.benny.november.business.api.info;
+package com.benny.november.business.domain.model;
 
 import lombok.Data;
 
 /**
- *
  * @author yin.beibei
- * @date 2018/11/19 15:41
+ * @date 2018/11/22 14:13
  */
 @Data
-public class UserInfo {
+public class UserDO {
 
     private Long id;
 
