@@ -5,13 +5,13 @@
     <parent>
         <artifactId>spring-cloud-parent-archetype</artifactId>
         <groupId>com.benny.november</groupId>
-        <version>0.0.2-SNAPSHOT</version>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
 
     <groupId>com.benny.november</groupId>
     <artifactId>business</artifactId>
     <packaging>pom</packaging>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
 
     <properties>
         <spring.boot.version>1.5.17.RELEASE</spring.boot.version>

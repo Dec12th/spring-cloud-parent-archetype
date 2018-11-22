@@ -5,13 +5,11 @@
     <parent>
         <artifactId>spring-cloud-parent-archetype</artifactId>
         <groupId>com.benny.november</groupId>
-        <version>0.0.2-SNAPSHOT</version>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>register</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
-    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>

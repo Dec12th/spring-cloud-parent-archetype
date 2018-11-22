@@ -5,12 +5,12 @@
     <parent>
         <artifactId>business</artifactId>
         <groupId>com.benny.november</groupId>
-        <version>0.0.2-SNAPSHOT</version>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
 
     <groupId>com.benny.november</groupId>
     <artifactId>business-api</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
 
     <dependencies>
         <dependency>

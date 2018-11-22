@@ -6,10 +6,10 @@
     <modules>
         <module>gateway</module>
         <module>register</module>
-        <module>business</module>
-    </modules>
+    <module>business</module>
+  </modules>
     <groupId>com.benny.november</groupId>
-    <version>0.0.2-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
         <spring.boot.version>1.5.17.RELEASE</spring.boot.version>
