@@ -4,12 +4,11 @@
     <parent>
         <artifactId>spring-cloud-parent-archetype</artifactId>
         <groupId>com.benny.november</groupId>
-        <version>0.0.2-SNAPSHOT</version>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>gateway</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -41,12 +40,13 @@
         <dependency>
             <groupId>com.benny.framework</groupId>
             <artifactId>common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
             <groupId>com.benny.november</groupId>
             <artifactId>business-api</artifactId>
-            <version>0.0.2-SNAPSHOT</version>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>

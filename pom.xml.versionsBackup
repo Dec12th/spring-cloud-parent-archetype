@@ -6,10 +6,10 @@
     <modules>
         <module>gateway</module>
         <module>register</module>
-        <module>business</module>
-    </modules>
+    <module>business</module>
+  </modules>
     <groupId>com.benny.november</groupId>
-    <version>0.0.2-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
         <spring.boot.version>1.5.17.RELEASE</spring.boot.version>
@@ -92,26 +92,30 @@
                 <artifactId>apollo-client</artifactId>
                 <version>1.1.0</version>
             </dependency>
-
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>1.2.41</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.squareup.okhttp3</groupId>
-                <artifactId>okhttp</artifactId>
-                <version>3.4.1</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.benny.framework</groupId>
-                <artifactId>common</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
+
+     <!--//ʹ��aliyun����-->
+<!--    <repositories>
+        <repository>
+            <id>aliyun</id>
+            <name>aliyun</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+        </repository>
+    </repositories>-->
+
+<!--    <profiles>
+        <profile>
+            <id>apollo</id>
+            <dependencies>
+                <dependency>
+                    <groupId>com.ctrip.framework.apollo</groupId>
+                    <artifactId>apollo-client</artifactId>
+                    <version>1.1.0</version>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>-->
 
 	<build>
         <defaultGoal>compile</defaultGoal>
@@ -151,9 +155,9 @@
                 <executions>
                     <execution>
                         <id>attach-sources</id>
-                        <phase>verify</phase><!--  要绑定到的生命周期的阶段 在verify之后，install之前执行下面指定的goal -->
+                        <phase>verify</phase><!--  Ҫ�󶨵����������ڵĽ׶� ��verify֮��install֮ǰִ������ָ����goal -->
                         <goals>
-                            <goal>jar-no-fork</goal><!-- 类似执行mvn source:jar -->
+                            <goal>jar-no-fork</goal><!-- ����ִ��mvn source:jar -->
                         </goals>
                     </execution>
                 </executions>
