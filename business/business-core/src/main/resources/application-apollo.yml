@@ -1,0 +1,9 @@
+#apollo启动配置
+app:
+  id: business-core
+apollo:
+  bootstrap:
+    enabled: true
+    namespaces: application,business-core
+  cluster: DEV
+  meta: https://xxx
