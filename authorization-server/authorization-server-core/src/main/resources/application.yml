@@ -1,0 +1,10 @@
+server:
+  port: 30000
+  undertow:
+    worker-threads: 200
+
+spring:
+  application:
+    name: authorization-server
+  profiles:
+    active: eureka,datasource
